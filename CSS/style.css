@@ -356,6 +356,17 @@ tr:hover {
     overflow: hidden;
 }
 
+.schedule-summaries details ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.schedule-summaries details[open] ul {
+    max-height: 1000px;
+    padding-top: 1rem;
+}
+
 .schedule-summaries summary {
     display: flex;
     justify-content: space-between;
