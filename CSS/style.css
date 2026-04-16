@@ -346,3 +346,72 @@ tr:hover {
 .sidebar nav a:not(:last-child) {
     border-bottom: 1px solid rgba(156, 37, 64, 0.15);
 }
+
+/* Horários em formato de sumário */
+.schedule-summaries details {
+    background-color: #1F1F25;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.schedule-summaries summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem 1.4rem;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #E8E8E8;
+    background-color: #2C0F1A;
+    transition: background 0.3s;
+}
+
+.schedule-summaries summary:hover {
+    background-color: #9C2540;
+}
+
+.schedule-summaries summary::-webkit-details-marker {
+    display: none;
+}
+
+.schedule-summaries ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 1.4rem 1.4rem;
+}
+
+.schedule-summaries li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #D0D0D8;
+}
+
+.schedule-summaries li:last-child {
+    border-bottom: none;
+}
+
+.schedule-summaries .time {
+    color: #9C2540;
+    font-weight: 700;
+    min-width: 90px;
+}
+
+@media (max-width: 768px) {
+    .schedule-summaries li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .schedule-summaries summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+}
