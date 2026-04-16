@@ -202,20 +202,20 @@ tr:hover {
 
 .schedule-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    overflow-x: auto;
+    justify-content: center;
     padding: 1rem 0;
-    scroll-snap-type: x mandatory;
 }
 
 .schedule-card {
     background-color: #25252B;
     border: 1px solid #9C2540;
     border-radius: 14px;
-    min-width: 340px;
-    flex: 0 0 340px;
+    min-width: 280px;
+    flex: 1 1 280px;
+    max-width: 340px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-    scroll-snap-align: start;
 }
 
 .schedule-card summary {
