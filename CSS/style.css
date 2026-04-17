@@ -422,3 +422,22 @@ tr:hover {
 .sidebar nav a:not(:last-child) {
     border-bottom: 1px solid rgba(156, 37, 64, 0.15);
 }
+/* Botão do QrCode */
+.botao-qrcode{
+    width: 75px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    padding: 5px 8px;
+    font-size: 12px;
+    background: #9C2540;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1000; /* garante que fique acima de tudo */
+}
+
+.botao-qrcode:hover{
+    opacity: 0.9;
+}
